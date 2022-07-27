@@ -15,5 +15,5 @@ A practical tool that helps you not to forget your tasks
 - Storing the tasks and its status in the browser's localStorage 
 - Adding micro animations to the web project 
 
-[Link do projeto](https://vitorlinsbinski.github.io/to-do-list/)
+[Project Link](https://vitorlinsbinski.github.io/to-do-list/)
 
