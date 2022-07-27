@@ -1,0 +1,177 @@
+.s-todo-list {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+
+    .p-creator {
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: $gray-300;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    h2 {
+        padding-top: 0;
+        margin-bottom: 2rem;
+    }
+
+
+    h1 {
+        margin-bottom: 0.1rem;
+    }
+
+    .input-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid rgba($color: $white, $alpha: .2);
+
+        input {
+            margin-right: 1rem;
+            color: white;
+            transition: outline .5s ease-out;
+
+            &:focus {
+                outline: 1px solid $gray-300;
+            }
+        }
+        button {
+            width: 5.5rem;
+            height: 5rem;
+            background-color: $gray-400;
+            border-radius: .8rem;
+            transition: background-color .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: rgba($color: $gray-400, $alpha: .8);
+            }
+        }
+
+    }
+
+    .cards {
+        margin-top: 2rem;
+        .card {
+            transition: all .3s ;
+            margin-bottom: 2rem;
+            overflow-wrap: break-word;
+            width: 100%;
+            background-color: $gray-300;
+            padding: 2rem 3rem;
+            display: flex;
+            align-items: center;
+            border-radius: .8rem;
+            display: flex;
+            align-items: center;
+
+            .icons {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: .8rem;
+                    cursor: pointer;
+                    transition: background-color .3s;
+
+                    &.check {
+                        border: 1px solid #B8FFDD;
+                        margin-right: .8rem;
+
+                        &:hover {
+                            background-color: #5C806E;
+                        }
+                    }
+
+                    &.trash {
+                        border: 1px solid #FFCBCF;
+
+                        &:hover {
+                            background-color: #806568;
+                        }
+                    }
+                }
+            }
+
+            .text {
+                max-width: 80%;
+                margin-left: 2rem;
+                padding-right: 2rem;
+                font-weight: light;
+            }
+
+            &.checked {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #262626;
+
+
+                .icons {
+                    .icon {
+                        &.check {
+                            background-color: #5C806E;
+                        }
+                    }
+                }
+
+                .text {
+                    p {
+                        text-decoration: line-through;
+                    }
+                }
+
+            }
+
+            
+
+        }
+    }
+
+    @media(max-width: 500px) {
+        padding-top: 3.4rem;
+
+        .cards {
+            .card {
+                .text {
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes deleted {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+}
+
+@keyframes added {
+    from {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
