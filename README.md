@@ -17,3 +17,5 @@ A practical tool that helps you not to forget your tasks
 
 [Project Link](https://vitorlinsbinski.github.io/to-do-list/)
 
+### Project Screenshot:  
+![todo-print](https://user-images.githubusercontent.com/69444717/181352404-1a5c43c1-7bf2-44a2-b163-e10caca577ed.png)
