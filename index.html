@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <section class="s-todo-list">
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div class="p-creator">
+                <p>Created by Vitor Linsbinski</p>
+            </div>
+
+
+            <div class="input-area" >
+                <input type="text" name="task" id="taskInput" placeholder="type your task" autocomplete="off">
+                <button id="btnSendTask" >
+                    <img src="./img/plus.svg" alt="">
+                </button>
+            </div>
+
+            <div class="cards" id="cardsTask">
+               
+            </div>
+            
+        </div>
+
+   
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
