@@ -116,26 +116,18 @@ function checkTask(idTask) {
     let divCheck = divIcons.firstChild;
     divCheck.style.transition = "background-color 2s";
     let divP = checkedCard.lastChild;
-    console.log('divP: ',divP);
     let p = divP.firstChild;    
-    console.log('p: ',p);
-    console.log(checkedCard);
-
+    
     let indexCard = taskDB.findIndex(item => item.id == idTask);
     let statusCheck = taskDB[indexCard].status;
-    console.log(statusCheck)
 
     let values = Object.values(taskDB[indexCard]);
-    console.log(values)
 
     let statusValue = values[2];
     let backgroundValue = values[3];
     let backgroundValueCheck = values[4];
     let textDecorationValue = values[5];
 
-
-    console.log(backgroundValue)
-    console.log(statusValue);
 
     if(statusValue == '' && backgroundValue == '$gray-300' && backgroundValueCheck == 'none' && textDecorationValue == 'none') {
         statusValue = 'checked';
